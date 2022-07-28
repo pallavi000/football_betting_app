@@ -1,0 +1,514 @@
+/* mobile */
+
+body{
+  background-color: #181829 !important;
+}
+.content-section{
+  height: 100%;
+  background: #181829;
+  padding: 2rem;
+  padding-bottom:80px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover ,a:active{
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-login-section{
+  padding-top: 0px;
+  padding-top: -60px;
+  margin-top: -60px;
+}
+.login-card{
+  background: #222232;
+  border-radius: 42px 42px 0px 0px;
+  padding: 2rem;
+  z-index: 2;
+  position: relative;
+}
+.login-card-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+.mobile-form-group{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.mobile-form-group input{
+  background: #181829;
+  border-radius: 16px;
+  border: 0px;
+  padding: 1.3rem 1rem;
+  width: 100%;
+  outline: 0px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #65656B;
+}
+.mobile-login-section .form-check{
+  font-family: 'Roboto';
+  font-style: normal;
+  /* font-weight: 400; */
+  /* font-size: 14px; */
+  /* line-height: 16px; */
+  color: #65656B;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-login-section .form-check input{
+  background: #65656B;
+}
+.mobile-login-section .form-check-label{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #65656B;
+
+}
+.mobile-forgot-password{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+.mobile-submit-btn{
+  align-items: center;
+  /* padding: 20px 73px; */
+  background: #246BFD;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  /* width: 28%; */
+  text-align: center;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 100%;
+  color: white !important;
+  border: 0px;
+  outline: 0px;
+}
+.mobile-new-account{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.mobile-new-account span{
+  color: #246BFD;
+  margin-left: 5px;
+}
+.mobile-image{
+  text-align: center;
+    /* background: #222232; */
+    /* border-radius: 57.6px; */
+    transform: translateY(66px);
+}
+
+.mobile-register-section .form-level-check{
+  color: #65656B;
+}
+.mobile-register-section .mobile-submit-section{
+  font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+.mobile-card-section{
+  
+}
+.mobile-card-top{
+  margin: auto;
+  text-align: center;
+}
+.mobile-card{
+  color: white;
+  margin: 2rem 0rem;
+}
+.mobile-card-active{
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.mobile-view-all{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4F8DE2;
+}
+.active-card-section{
+  background: #222232;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 19px;
+  padding: 2rem;
+  margin-top: 1rem;
+
+}
+.active-card-action{
+  background: #4BB543;
+  border-radius: 19px;
+  width: fit-content;
+  padding: 3px 15px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+}
+.team1-img{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.team1-img .img{
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.card-team-name{
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.add-home-team input{
+  background: #181829;
+    border-radius: 16px;
+    border: 0px;
+    width: 100%;
+    padding: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #65656B;
+    margin-bottom: 1rem;
+}
+.opponent-name{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-right: 8px;
+}
+.mobile-team-opponent{
+  flex-wrap: wrap;
+    justify-content: center !important;
+    flex: 0 0 40%;
+}
+.mobile-team-opponent img{
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.vs{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.win-icon{
+  background: #181829;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 19px;
+  padding: 6px 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.win-icon.active{
+  border: 2px solid #246BFD;
+}
+.profile-section{
+ 
+}
+.profile-image{
+  text-align: center;
+  margin-top: 2rem;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+.profile-image img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  text-align: center;
+  margin: auto;
+}
+.profile-edit-icon{
+  position: absolute;
+  bottom: 0;
+  right: -12px;
+  color: wheat;
+  background: #18345E;
+  border: 2px solid #181829;
+  padding: 6px 10px;
+  border-radius: 50%;
+}
+.profile-name{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px !important;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+.profile-card-detail{
+  color: white;
+  margin-bottom: 2rem;
+}
+.profile-card-icon{
+  background: #222232;
+  padding: 10px 15px;
+  border-radius: 50%;
+  margin-right: 2rem;
+
+}
+.profile-card-name{
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #222222;
+  width: 100%;
+}
+.profile-name{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.profile-value{
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
+    margin-top: 10px;
+
+}
+.user-name{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+/* white/1 */
+
+color: #FFFFFF;
+}
+.add-home-team img{
+  background: #181829;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 19px;
+    padding: 8px 15px;
+    height: 45px;
+}
+.add-balance-label{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin: 1rem 0px;
+}
+.mobile-card-section.add-balance{
+  height: 100%;
+}
+.add-balance .ccv-margin{
+  margin-left: 1rem;
+}
+.success-section{
+
+
+}
+.success-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+.success-detail
+{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  margin-bottom: 4rem;
+}
+.mobile-header{
+  background: #222232;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.week-card-top{
+  display: flex;
+  background: #18345E;
+  padding: 0rem 1rem;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+
+}
+.week-card-top img{
+  max-width: 100%;
+  height: 111px
+}
+.week-card-title{
+  width: 36%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  /* margin-bottom: 5rem; */
+  margin-right: 1rem;
+  height: 100%;
+  z-index: 5;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.new-week-card{
+  background: #FFFFFF;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  z-index: 4;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  /* line-height: 12px; */
+  color: #18345E;
+  padding: 3px 8px;
+  white-space: nowrap;
+  height: fit-content;
+}
+.card-round{
+  background: #4F8DE2;
+  height: 100%;
+  width: 160px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 100%;
+}
+.select-prefix__control{
+  background-color: #181829;
+  border-radius: 16px;
+  border: 0px;
+  width: 100%;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #65656B;
+  margin-bottom: 1rem;
+}
+.active-card-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26.35px;
+  line-height: 36px;
+  text-align: center;
+  color: #65656B;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.transaction-card-section{
+  background: #222232;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 19px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.transaction-id{
+  font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #65656B;
+    justify-content: space-around;
+    align-items: center;
+}
+.transaction-balance{
+  font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5BB318;
+    justify-content: space-around;
+    align-items: center;
+}
+.team-select{
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Readex Pro', sans-serif !important;
+    background: #F9F9F9;
+}
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover ,a:active{
+    text-decoration: none;
+    color: black;
+  }
+.content-section{
+    max-width: 900px;
+    margin: auto;
+}
+.login-section{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    margin: 0px;
+}
+.login-image-section{
+    height: 100%;
+    background: #153484;
+    backdrop-filter: blur(24px);
+    height: 100vh;
+}
+.login-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+ 
+}
+.login-image img{
+    max-width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    /* height: 376px; */
+    object-fit: cover;
+    height: 625px;
+}
+.login-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #18345E;
+    margin-bottom: 2rem;
+}
+.welcome{
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    bottom: 66px;
+    background: rgba(0, 83, 160, 0.5);
+    height: fit-content;
+    padding: 2rem;
+}
+.welcome span{
+    display: block;
+    font-size: 18px;
+}
+.login-section .form-group{
+    margin-bottom: 2rem !important;
+}
+.login-section label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #18345E;
+    display: block;
+    margin-bottom: 5px;
+}
+.login-section input{
+    background: #F4F2F2;
+    border-radius: 6px;
+    border: 0px;
+    padding: 1rem;
+    width: 100%;
+    outline: 0px !important;
+}
+.login-btn{
+    background: #153484;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 6%);
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.new-account{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(49, 46, 129, 0.8);
+    margin-top: 1rem;
+    text-align: center;
+}
+.new-account span{
+    color: #22C1DC;
+}
+.login-section form{
+    width: 75%;
+    margin: auto;
+    margin-top: 5rem;
+}
+.desktop-nav{
+    padding: 1rem 3rem !important;
+    background: transparent !important;
+    background-color: transparent;
+    position: absolute  !important;
+    width: 100% !important ;
+    /* top: -31px; */
+    z-index: 1 !important;
+    color: white !important;
+}
+.desktop-nav .navbar-brand{
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: white !important;
+}
+.desktop-nav .collapse{
+    justify-content: center;
+}
+.desktop-nav .nav-item{
+    margin-right: 3rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFEFE;
+}
+.desktop-nav .nav-item .nav-link{
+    color: white !important;
+}
+
+.home-section{
+    height: 100vh;
+}
+.home-image-section{
+    height: 100vh;
+    background: #4F8DE2;
+    padding-top: 65px;
+}
+.home-image-section img{
+    position: absolute;
+    height: 530px;
+    left: 50px;
+    object-fit: cover;
+}
+.home-detail-section{
+    background: #153484;
+    height: 100vh;
+    padding-top: 65px;
+}
+
+.home-card{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    height: 100vh;
+}
+.home-card-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFF9F9;
+    margin-bottom: 2rem;
+}
+.home-card-detail{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #F1FCFA;
+    margin-bottom: 2rem;
+
+}
+.home-card-btn{
+    background: #EFF1F3;
+    border-radius: 100px;
+    padding: 1rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    margin-right: 2rem;
+}
+
+.card-nav{
+    padding: 1rem 2rem !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #000000 !important;
+    border: 1px solid #EFEFEF !important;
+    background: white !important;
+}
+.card-nav .navbar-brand{
+    color: black;
+   
+}
+.card-nav .nav-item a{
+color: black !important;
+margin-right: 1rem;
+}
+.user-balance-section{
+    background: rgba(239, 239, 239, 0.7);
+    border: 1px solid #D1D3D4;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #1A1F36;
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+}
+.user-balance-section i{
+    color: #A3ACB9;
+    margin-right: 1rem;
+    font-size: 18px;
+}
+.user-profile{
+    text-align: center;
+    color: #A3ACB9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: 25px;
+
+}
+.week-card-top{
+    display: flex;
+    background: #18345E;
+    padding: 0rem 1rem;
+    height: 70vh;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+
+}
+.week-card-top img{
+    max-width: 100%;
+    height: 400px;
+}
+.week-card-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    width: 36%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    /* margin-bottom: 5rem; */
+    margin-right: 5rem;
+    height: 100%;
+    z-index: 5;
+}
+.new-week-card{
+    background: #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    color: #18345E;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    z-index: 4;
+}
+.card-round{
+    background: #4F8DE2;
+    height: 100%;
+    width: 393px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 100%;
+}
+.active-card-section{
+    width: 75%;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.active-card-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.35px;
+    line-height: 36px;
+    text-align: center;
+    color: #18345E;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.active-card{
+    background: #FFFFFF;
+    box-shadow: 12px 12px 36px 6px rgb(2 2 70 / 12%);
+    border-radius: 24.3032px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.active-match{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+}
+.active-logo{
+    background: #4BB543;
+    border-radius: 24.3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.7419px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0.3rem 1.5rem;
+}
+.archived{
+    background: #FF4500 !important;
+
+}
+.form-check{
+    display: flex !important;
+    justify-content: center !important;
+}
+.match-card{
+    width: 50%;
+    border: 1px solid #E4E5E6;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.team-img img{
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.team-img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.team-name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 5px;
+}
+.vs{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+.add-card-section{
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding: 2rem 4rem 4rem 4rem;
+    margin: 4rem 1rem;
+}
+.add-card-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.35px;
+    line-height: 36px;
+    text-align: center;
+    color: #020246;
+    margin-bottom: 2rem;
+    text-align: left;
+
+}
+.add-card-form{
+    background: #FFFFFF;
+    box-shadow: 12px 12px 36px 6px rgb(2 2 70 / 12%);
+    border-radius: 24.3032px;
+    padding: 2rem;
+}
+.add-card-section .form-group{
+    margin-bottom: 1rem;
+}
+.add-card-section label{
+    color: #344054;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.btn-add-card{
+    background: #020246;
+    border: 0.775px solid #020246;
+    box-shadow: 6.2px 6.2px 18.6px rgb(2 2 70 / 15%);
+    border-radius: 6.2px;
+    color: white;
+    padding: 1rem 6rem;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.update-card-section{
+    padding: 3rem 4rem 4rem 4rem;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    margin: 4rem 0rem;
+}
+.update-card-title{
+    font-weight: 700;
+    font-size: 26.35px;
+    line-height: 36px;
+    text-align: center;
+    color: #020246;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.update-card-section table{
+    width: 100%;
+    padding: 5rem;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+.update-card-section thead{
+    background: #4F8DE2;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.update-card-section thead th{
+    padding: 1rem;
+    width: fit-content;
+    text-align: center;
+}
+.update-card-section tbody td{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    align-items: center;
+    /* width: fit-content; */
+    justify-content: center;
+    padding: 10px 0px;
+}
+.update-card-section tbody td img{
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-left: 7px;
+    height: 36px;
+    width: 36px;
+}
+.tr-border{
+    border-bottom: 1px solid #E1CFFF;
+}
+.tr-border.active{
+    background: rgba(79, 141, 226, 0.7);
+}
+
+.payment-method-section{
+    background: #EFF0F7;
+    border: 0.778215px solid #020246;
+    border-radius: 6.22572px;
+    padding: 1.5rem 1rem;
+}
+
+.payment-method-section .form-check-input{
+    background: #020246 !important;
+    border: 1px solid #020246 !important;
+    border-radius: 8px;
+    color: white;
+}
+.payment-method-section .form-check-label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #344054;
+    margin-left: 10px;
+}
+.payment-card-holder img{
+    height: 32px;
+    margin-right: 10px;
+}
+.lock-text{
+    color: #828282;
+    font-size: 12px;
+    margin-left: 12px;
+}
+.logout-navbar{
+    margin-left: 24rem !important;
+    justify-content: flex-end !important;
+}
+.logout-navbar li{
+    margin-right: 0px !important;
+}
+
+.desktop-nav .nav-item .signin-nav{
+    background: #EFF1F3;
+    border-radius: 100px;
+    padding: 12px 19px !important;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    /* line-height: 21px; */
+    text-align: center;
+    color: #000000 !important;
+    margin-right: 2rem;
+}
+.nav-drop{
+    background: white !important;
+    border: 0px !important;
+    color: black !important;
+    outline: 0px !important;
+}
+.nav-drop:active{
+    outline: 0px;
+}
+.profile-row{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-value{
+    color: #576F72;
+    font-size: 18px;
+}
+.profile-btn{
+   padding: 1rem 0px !important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.profile-btn:hover{
+color: white;
+}
+.success-container{
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding: 3rem;
+
+}
+.success-section .active-card-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.35px;
+    line-height: 36px;
+    text-align: center;
+    color: #18345E;
+   
+    margin-bottom: 1rem;
+}
+.desktop-success-section{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.95px;
+    line-height: 23px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.hurray{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #020246;
+    margin: 1rem 0rem;
+}
+.success-detail{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+.transaction-summery{
+    background: #FFFFFF;
+    border: 0.382778px solid #B2BCCA;
+    border-radius: 6.12444px;
+    padding: 1rem;
+}
+.success-transaction-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* text-align: center; */
+    color: #020246;
+}
+.success-balance{
+    font-weight: 400;
+    font-size: 14.2489px;
+    line-height: 18px;
+    color: #101828;
+}
+.desktop-success-detail{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.95px;
+    line-height: 23px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 2rem 3rem;
+    padding-top: 0rem;
+
+}
