@@ -1,15 +1,16 @@
 const { Router } = require('express');
 const router = Router(); 
 const Team = require('../model/Team') 
-const Authorization = require('../middleware/auth')
+const Authorization = require('../middleware/auth');
+const ApiError = require('../middleware/ApiError');
 
 // Get all teams
 router.get('/', Authorization, async(req, res) => {
     try {
-        const teams = await Team.find()
+        const teams = await Team.find().sort('-_id')
         res.send(teams)
     } catch (error) {
-        res.status(500).send(error.message)
+        ApiError(res, 500, 'Server Error', error)
     }
 })
 
@@ -22,7 +23,6 @@ router.post('/', Authorization, async(req, res) => {
         if(req.files.image){
             console.log(req.files.image)
             const image = req.files.image
-            console.log(image)
            var r= Math.random()
             r= r.toString().replace('.','-')
             var is_error= false
@@ -35,11 +35,9 @@ router.post('/', Authorization, async(req, res) => {
             is_error= error
            })
            if(is_error){
-            return  res.status(500).send(is_error)
+            return res.status(500).send(is_error)
            }
         }
-
-
 
         let team = new Team({
             name:req.body.name,
@@ -49,7 +47,7 @@ router.post('/', Authorization, async(req, res) => {
         team = await team.save()
         res.send(team)
     } catch (error) {
-        res.status(500).send(error.message)
+        ApiError(res, 500, 'Server Error', error)
     }
 })
 
@@ -59,7 +57,7 @@ router.get('/:id', Authorization, async(req, res) => {
         const team = await Team.findById(req.params.id)
         res.send(team)
     } catch (error) {
-        res.status(500).send(error.message)
+        ApiError(res, 500, 'Server Error', error)
     }
 })
 
@@ -71,7 +69,6 @@ router.put('/:id', Authorization, async(req, res) => {
 
         if(req.files && req.files.image){
             const image = req.files.image
-            console.log(image)
            var r= Math.random()
             r= r.toString().replace('.','-')
             var is_error= false
@@ -93,7 +90,7 @@ router.put('/:id', Authorization, async(req, res) => {
            await team.save()
         res.send(team)
     } catch (error) {
-        res.status(500).send(error.message)
+        ApiError(res, 500, 'Server Error', error)
     }
 })
 
@@ -103,7 +100,7 @@ router.delete('/:id', Authorization, async(req, res) => {
         const team = await Team.findByIdAndDelete(req.params.id)
         res.send(team)
     } catch (error) {
-        res.status(500).send(error.message)
+        ApiError(res, 500, 'Server Error', error)
     }
 })
 

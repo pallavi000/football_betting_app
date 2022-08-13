@@ -1,42 +1,30 @@
-import React, { useEffect, useState } from 'react'
-import { Outlet, useNavigate } from 'react-router-dom'
-import $ from 'jquery'
+import React, { useContext, useEffect, useState } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
+import $ from "jquery";
+import { globalContext } from "../../../global/GlobalContext";
+import useDeviceDetect from "../../../hooks/useDeviceDetect";
+import AppLoader from "../../../global/AppLoader";
+import PageLoader from "../../Loader/PageLoader";
 
 function UserProtected(props) {
-   const navigate = useNavigate()
+  const navigate = useNavigate();
+  const { user, appLoading } = useContext(globalContext);
+  const { isMobile } = useDeviceDetect();
 
-   useEffect(() => {
-    $('.content-section').css('max-width','900px')
-    }, [])
+  useEffect(() => {
+    $(".content-section").css("max-width", "900px");
+  }, []);
 
-   async function getUser() {
+  useEffect(() => {
+    if (!user && appLoading && isMobile) {
+      return navigate("/login");
+    }
+    if (!user && appLoading && !isMobile) {
+      return navigate("/");
+    }
+  }, [appLoading, user]);
 
-   }
-   
-    useEffect(()=>{
-        if(localStorage.getItem('token')){
-          try {
-            var token = localStorage.getItem('token')
-            var user = JSON.parse(localStorage.getItem('user'))
-            if(token){
-             
-            }
-          } catch (error) {
-          }
-
-          getUser()
-          
-        }else{
-            navigate('/')
-        }
-
-    },[props])
-  return (
-    <>
-
-        <Outlet/>
-    </>
-  )
+  return <Outlet />;
 }
 
-export default UserProtected
+export default UserProtected;

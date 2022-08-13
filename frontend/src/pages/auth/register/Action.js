@@ -18,7 +18,7 @@ export async function RegisterApi(name,email,password){
         data: response.data
         }
     } catch (error) {
-        Toastr.error('Internal Server Error')
+        Toastr.error(error?.response?.data?.message || 'Internal Server Error')
 
         return{
             status:'error',

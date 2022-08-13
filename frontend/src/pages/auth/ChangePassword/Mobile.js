@@ -22,7 +22,7 @@ function Mobile() {
     }
   return (
     <div className='mobile-card-section'>
-        <div className='mobile-card'>
+        <div className='mobile-card mobile-register-section'>
         <div className='d-flex align-items-center justify-content-between'>
         <div className='mobile-card-active'>Password Change</div>
         </div>
@@ -32,9 +32,11 @@ function Mobile() {
             <div className='active-card-section'>
           <div className=' mt-4'>
             <div className='add-home-team'>
+              <label>New Password</label>
               <input type="password"  placeholder="New Password" onChange={(e)=>setNewPassword(e.target.value)} required></input>
             </div>
             <div className='add-home-team'>
+            <label>Confirm Password</label>
             <input type="password" placeholder='Confirm Password'  onChange={(e)=>setConfirmPassword(e.target.value)} required></input>
             </div>
           </div>
