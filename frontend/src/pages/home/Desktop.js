@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Header from '../../global/header/Header'
 import home from '../../images/home.png'
 import $ from 'jquery'
+import { Link } from 'react-router-dom'
 
 function Desktop() {
   useEffect(() => {
@@ -22,7 +23,7 @@ function Desktop() {
 
         <div className='d-flex justify-content-center align-items-center'>
           <div className='home-card-btn'>Download App</div>
-          <div className='home-card-btn'>Visit Website</div>
+          <Link to={'/login'} className='home-card-btn'>Visit Website</Link>
         </div>
       </div>
     </div>

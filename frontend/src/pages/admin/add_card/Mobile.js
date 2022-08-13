@@ -35,80 +35,9 @@ const customStyles = {
 }
 
 
-function Mobile() {
+function Mobile({handleChange, handleSubmit, count, teams, setAmount, setReward, isLoading, isAllFilled}) {
 
-  const [count,setCount] = useState([])
-  const[isLoading,setIsLoading] = useState(false)
-  const[amount,setAmount] = useState('')
-  const[reward,setReward] = useState(0)
-  const[teams,setTeams] = useState([])
-
-
-  const navigate = useNavigate()
-
-
- useEffect(() => {
-  const team=[]
-  for(var i=0;i<2;i++){
-    team.push({
-      home_team:'',
-      away_team:''
-    })
-   }
-   setCount(team)
- }, [])
-
-
- 
- useEffect(() => {
-  getData()
-  }, [])
   
- 
- 
-   async function getData(){
-   const response = await getTeamList()
-   var arr=[]
-   for (const team of response.data) {
-    arr.push({
-      value:team._id,
-      label:team.name
-    })
-   }
-console.log(arr)
-   setTeams(arr)
-  }
- 
-
- function handleChange(e,index,name){
-  console.log(e)
-  var newcount = [...count]
-  if(name=="home_team"){
-    newcount[index].home_team= e.value
-  }else{
-    newcount[index].away_team = e.value
-  }
- 
-  setCount(newcount)
- }
-
- async function handleSubmit(e){
-  e.preventDefault()
-  const data={
-    counts:count,
-    balance:amount,
-    reward
-
-  }
-  setIsLoading(true)
-  await AddCardApi(data)
-  setIsLoading(false)
-  console.log(count)
-  navigate(-1)
- }
- 
-
-
   return (
     <div className='mobile-card-section'>
         <div className='mobile-card'>
@@ -123,31 +52,38 @@ console.log(arr)
           <div className='active-card-match'>Match #{index+1}</div>
           <div className=' mt-4'>
             <div className='add-home-team'>
-            {teams && teams.length>0?(
               <Select
         onChange={(e)=>handleChange(e,index,'home_team')}
         options={teams}
         name="home_team"
         className='team-select'
-      
+        placeholder="Home Team"
         styles={customStyles}
+        formatOptionLabel={team => (
+          <div className="d-flex align-items-center">
+            <img src={team.image} className="bg-transparent shadow-none" height={30}/>
+            <span>{team.label}</span>
+          </div>
+        )}
       />
-            ):(
-            null
-            )}
+           
      
             </div>
             <div className='add-home-team'>
-            {teams && teams.length>0?(
             <Select
         onChange={(e)=>handleChange(e,index,'away_team')}
         options={teams}
         name="away_team"
         className='text-select'
-        
+        placeholder="Away Team"
         styles={customStyles}
+        formatOptionLabel={team => (
+          <div className="d-flex align-items-center">
+            <img src={team.image} className="bg-transparent shadow-none" height={30}/>
+            <span>{team.label}</span>
+          </div>
+        )}
       />
-            ):(null)}
 
             </div>
           </div>
@@ -174,8 +110,9 @@ console.log(arr)
       
 
         {isLoading?(
-          <button className='mobile-submit-btn'>Addding</button>   
-
+          <button className='mobile-submit-btn' disabled>Adding</button>   
+        ):!isAllFilled ?(
+          <button className='mobile-submit-btn' disabled>Fill Out Form</button>   
         ):(
           <button className='mobile-submit-btn'>Add</button>   
         )}

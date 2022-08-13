@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Mobile() {
-  return (
-    <div>Mobile</div>
-  )
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate("/login");
+  }, []);
+  return <div></div>;
 }
 
-export default Mobile
+export default Mobile;

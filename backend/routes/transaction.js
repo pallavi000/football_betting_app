@@ -7,7 +7,7 @@ const User = require('../model/User');
 // Get all transactions
 router.get('/', Authorization, async(req, res) => {
     try {
-        const transactions = await Transaction.find()
+        const transactions = await Transaction.find().sort('-_id')
         res.send(transactions)
     } catch (error) {
         res.status(500).send(error.message)
@@ -16,15 +16,13 @@ router.get('/', Authorization, async(req, res) => {
 
 // get transaction by user id
 
-router.get('/user/transit/',Authorization, async(req,res)=>{
+router.get('/user/transit',Authorization, async(req,res)=>{
     try {
         let transaction
         if(req.user.role=='admin'){
-            transaction = await Transaction.find()
-
+            transaction = await Transaction.find().sort('-_id')
         }else{
-            transaction = await Transaction.find({'user_id':req.user._id})
-
+            transaction = await Transaction.find({'user_id':req.user._id}).sort('-_id')
         }
 
         res.send(transaction)

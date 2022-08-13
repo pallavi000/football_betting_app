@@ -21,8 +21,8 @@ function UpdateEle({match,index,results,setResults}) {
         </div>
         <div className='vs'>VS</div>
         <div className='mobile-team-opponent d-flex align-items-center'>
-          <div className='opponent-name'>{match.away_team_nickname}</div>
           <img src={match.away_team_image} className="img-fluid"></img>
+          <div className='opponent-name right'>{match.away_team_nickname}</div>
         </div>
       </div>
       <div className='d-flex justify-content-between align-items-center mt-3'>

@@ -7,8 +7,9 @@ const UserSchema = new mongoose.Schema({
     balance:{type:Number,default:0},
     reset_key:{type:String},
     role:{type:String,default:'user'},
-    reward:{type:Number,default:0}
-    
+    reward:{type:Number,default:0},
+    phone: {type:String},
+    address: {type:String},
 },{
     timestamps: true,
 });
